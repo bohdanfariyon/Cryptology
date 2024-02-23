@@ -12,7 +12,7 @@ namespace Program
             InitializeComponent();
         }
 
-        private Dictionary<char, int> частотніТаблиціGetLetterFrequencies(string text)
+        private Dictionary<char, int> Lab1GetLetterFrequencies(string text)
         {
             // Видалення всіх символів, залишаючи тільки літери та перетворення на нижній регістр
             string onlyLetters = Regex.Replace(text, @"[^a-zA-Zа-яА-Я]", "").ToLower();
@@ -36,7 +36,7 @@ namespace Program
 
        
 
-        private void частотніТаблиціDisplayFrequenciesInDataGridView(Dictionary<char, int> frequencies)
+        private void Lab1DisplayFrequenciesInDataGridView(Dictionary<char, int> frequencies)
         {
 
             DataTable table = new DataTable();
@@ -49,40 +49,40 @@ namespace Program
                 table.Rows.Add(pair.Key, pair.Value);
             }
             
-            частотніТаблиціdataGridView1.DataSource = table;
+            Lab1dataGridView1.DataSource = table;
 
-            частотніТаблиціdataGridView1.ScrollBars = ScrollBars.Vertical;
+            Lab1dataGridView1.ScrollBars = ScrollBars.Vertical;
 
-            this.Controls.Add(частотніТаблиціdataGridView1);
+            this.Controls.Add(Lab1dataGridView1);
         }
 
-        private void частотніТаблиціRead()
+        private void Lab1Read()
         {
-            string text = частотніТаблиціtextBox.Text;
+            string text = Lab1textBox.Text;
 
 
-            частотніТаблиціfrequencies = частотніТаблиціGetLetterFrequencies(text);
+            Lab1frequencies = Lab1GetLetterFrequencies(text);
 
             string fileName = "Dict.json";
             string directoryPath = @"D:\ЛНУ\2 курс 2 семестр\Криптологія\Cryptology\Program\Program\Files";
             string filePath = Path.Combine(directoryPath, fileName);
 
-            
 
-            частотніТаблиціDisplayFrequenciesInDataGridView(частотніТаблиціfrequencies);
+
+            Lab1DisplayFrequenciesInDataGridView(Lab1frequencies);
         }
 
-        private void частотніТаблиціRun(object sender, EventArgs e)
+        private void Lab1Run(object sender, EventArgs e)
         {
 
-            частотніТаблиціRead();
+            Lab1Read();
         }
 
 
 
 
 
-        private void частотніТаблиціToolStripMenuItem_Click(object sender, EventArgs e)
+        private void Lab1ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MenuStrip menuStrip = menuStrip1;
 
@@ -98,15 +98,15 @@ namespace Program
             
 
             // Додаємо DataGridView до контролів форми
-            Controls.Add(частотніТаблиціdataGridView1);
-            частотніТаблиціbuttonRun.Visible = true;
-            частотніТаблиціbtnSave.Visible = true;
-            частотніТаблиціtextBox.Visible = true; // Робимо текстовий бокс видимим
-            Controls.Add(частотніТаблиціtextBox); // Додавання нового елемента
-            Controls.Add(частотніТаблиціbuttonRun);
-            Controls.Add(частотніТаблиціbtnSave);
+            Controls.Add(Lab1dataGridView1);
+            Lab1buttonRun.Visible = true;
+            Lab1btnSave.Visible = true;
+            Lab1textBox.Visible = true; // Робимо текстовий бокс видимим
+            Controls.Add(Lab1textBox); // Додавання нового елемента
+            Controls.Add(Lab1buttonRun);
+            Controls.Add(Lab1btnSave);
         }
-        private void частотніТаблиціbtnSave_Click(object sender, EventArgs e)
+        private void Lab1btnSave_Click(object sender, EventArgs e)
         {
             // Створюємо діалогове вікно для вибору місця збереження файлу
             SaveFileDialog saveFileDialog = new SaveFileDialog();
@@ -118,7 +118,7 @@ namespace Program
                 string filePath = saveFileDialog.FileName;
 
                 
-                string newJson = JsonConvert.SerializeObject(частотніТаблиціfrequencies, Formatting.Indented);
+                string newJson = JsonConvert.SerializeObject(Lab1frequencies, Formatting.Indented);
                 File.WriteAllText(filePath, newJson);
 
 
@@ -163,17 +163,17 @@ namespace Program
             int newHeight = this.Height;
 
             // Оновлюємо розміри елементів пропорційно до нового розміру форми
-            частотніТаблиціtextBox.Width = newWidth / 3; // наприклад, ширина текстового поля - третина ширини форми
-            частотніТаблиціtextBox.Height = newHeight*3/4; // наприклад, висота текстового поля - половина висоти форми
-            частотніТаблиціdataGridView1.Width = newWidth / 3;
-            частотніТаблиціdataGridView1.Height = newHeight*3/4;
+            Lab1textBox.Width = newWidth / 3; // наприклад, ширина текстового поля - третина ширини форми
+            Lab1textBox.Height = newHeight*3/4; // наприклад, висота текстового поля - половина висоти форми
+            Lab1dataGridView1.Width = newWidth / 3;
+            Lab1dataGridView1.Height = newHeight*3/4;
 
             // Встановлюємо розташування елементів
             Console.WriteLine("Width вікна: " + this.Width);
 
-            частотніТаблиціbuttonRun.Location = new Point((newWidth - частотніТаблиціbuttonRun.Width) / 2, (newHeight - частотніТаблиціbuttonRun.Height) / 2 - newHeight / 5);
-            частотніТаблиціbtnSave.Location = new Point((newWidth - частотніТаблиціbtnSave.Width) / 2, (newHeight - частотніТаблиціbtnSave.Height) / 2);
-            частотніТаблиціdataGridView1.Location = new Point(newWidth - частотніТаблиціdataGridView1.Width-35, 35); // зправа та в куті
+            Lab1buttonRun.Location = new Point((newWidth - Lab1buttonRun.Width) / 2, (newHeight - Lab1buttonRun.Height) / 2 - newHeight / 5);
+            Lab1btnSave.Location = new Point((newWidth - Lab1btnSave.Width) / 2, (newHeight - Lab1btnSave.Height) / 2);
+            Lab1dataGridView1.Location = new Point(newWidth - Lab1dataGridView1.Width-35, 35); // зправа та в куті
 
             // і так далі...
         }
@@ -187,7 +187,7 @@ namespace Program
             }
         }
 
-        private void частотніТаблиціdataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void Lab1dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

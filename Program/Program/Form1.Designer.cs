@@ -38,14 +38,14 @@ namespace Program
             this.Resize += new EventHandler(Form1_Resize);
 
             menuStrip1 = new MenuStrip();
-            частотніТаблиціToolStripMenuItem = new ToolStripMenuItem();
+            Lab1ToolStripMenuItem = new ToolStripMenuItem();
             шифрПростоїЗаміниToolStripMenuItem = new ToolStripMenuItem();
-            частотніТаблиціtextBox = new TextBox();
-            частотніТаблиціbuttonRun = new Button();
-            частотніТаблиціbtnSave = new Button();
-            частотніТаблиціdataGridView1 = new DataGridView();
+            Lab1textBox = new TextBox();
+            Lab1buttonRun = new Button();
+            Lab1btnSave = new Button();
+            Lab1dataGridView1 = new DataGridView();
             menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)частотніТаблиціdataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Lab1dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // menuStrip1
@@ -53,7 +53,7 @@ namespace Program
             menuStrip1.BackColor = Color.FromArgb(64, 64, 64);
             menuStrip1.Font = new Font("Verdana", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { частотніТаблиціToolStripMenuItem, шифрПростоїЗаміниToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { Lab1ToolStripMenuItem, шифрПростоїЗаміниToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Padding = new Padding(7, 3, 0, 3);
@@ -63,12 +63,12 @@ namespace Program
             // 
             // частотніТаблиціToolStripMenuItem
             // 
-            частотніТаблиціToolStripMenuItem.ForeColor = Color.White;
-            частотніТаблиціToolStripMenuItem.Name = "частотніТаблиціToolStripMenuItem";
-            частотніТаблиціToolStripMenuItem.ShortcutKeys = Keys.Alt | Keys.F;
-            частотніТаблиціToolStripMenuItem.Size = new Size(169, 24);
-            частотніТаблиціToolStripMenuItem.Text = "Частотні таблиці";
-            частотніТаблиціToolStripMenuItem.Click += частотніТаблиціToolStripMenuItem_Click;
+            Lab1ToolStripMenuItem.ForeColor = Color.White;
+            Lab1ToolStripMenuItem.Name = "частотніТаблиціToolStripMenuItem";
+            Lab1ToolStripMenuItem.ShortcutKeys = Keys.Alt | Keys.F;
+            Lab1ToolStripMenuItem.Size = new Size(169, 24);
+            Lab1ToolStripMenuItem.Text = "Частотні таблиці";
+            Lab1ToolStripMenuItem.Click += Lab1ToolStripMenuItem_Click;
             // 
             // шифрПростоїЗаміниToolStripMenuItem
             // 
@@ -81,58 +81,58 @@ namespace Program
             // 
             // частотніТаблиціtextBox
             // 
-            частотніТаблиціtextBox.Font = new Font("Verdana", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            частотніТаблиціtextBox.Location = new Point(14, 36);
-            частотніТаблиціtextBox.Margin = new Padding(3, 4, 3, 4);
-            частотніТаблиціtextBox.Multiline = true;
-            частотніТаблиціtextBox.Name = "частотніТаблиціtextBox";
-            частотніТаблиціtextBox.ScrollBars = ScrollBars.Vertical;
-            частотніТаблиціtextBox.Size = new Size(342, 359);
-            частотніТаблиціtextBox.TabIndex = 1;
-            частотніТаблиціtextBox.Visible = false;
+            Lab1textBox.Font = new Font("Verdana", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            Lab1textBox.Location = new Point(14, 36);
+            Lab1textBox.Margin = new Padding(3, 4, 3, 4);
+            Lab1textBox.Multiline = true;
+            Lab1textBox.Name = "частотніТаблиціtextBox";
+            Lab1textBox.ScrollBars = ScrollBars.Vertical;
+            Lab1textBox.Size = new Size(342, 359);
+            Lab1textBox.TabIndex = 1;
+            Lab1textBox.Visible = false;
             // 
             // частотніТаблиціbuttonRun
             // 
-            частотніТаблиціbuttonRun.BackColor = Color.White;
-            частотніТаблиціbuttonRun.Font = new Font("Verdana", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            частотніТаблиціbuttonRun.ForeColor = Color.Black;
-            частотніТаблиціbuttonRun.Location = new Point(406, 36);
-            частотніТаблиціbuttonRun.Margin = new Padding(3, 4, 3, 4);
-            частотніТаблиціbuttonRun.Name = "частотніТаблиціbuttonRun";
-            частотніТаблиціbuttonRun.Size = new Size(171, 67);
-            частотніТаблиціbuttonRun.TabIndex = 2;
-            частотніТаблиціbuttonRun.Text = "Виконати";
-            частотніТаблиціbuttonRun.UseVisualStyleBackColor = false;
-            частотніТаблиціbuttonRun.Visible = false;
-            частотніТаблиціbuttonRun.Click += частотніТаблиціRun;
+            Lab1buttonRun.BackColor = Color.White;
+            Lab1buttonRun.Font = new Font("Verdana", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            Lab1buttonRun.ForeColor = Color.Black;
+            Lab1buttonRun.Location = new Point(406, 36);
+            Lab1buttonRun.Margin = new Padding(3, 4, 3, 4);
+            Lab1buttonRun.Name = "частотніТаблиціbuttonRun";
+            Lab1buttonRun.Size = new Size(171, 67);
+            Lab1buttonRun.TabIndex = 2;
+            Lab1buttonRun.Text = "Виконати";
+            Lab1buttonRun.UseVisualStyleBackColor = false;
+            Lab1buttonRun.Visible = false;
+            Lab1buttonRun.Click += Lab1Run;
             // 
             // частотніТаблиціbtnSave
             // 
-            частотніТаблиціbtnSave.BackColor = Color.White;
-            частотніТаблиціbtnSave.Font = new Font("Verdana", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            частотніТаблиціbtnSave.ForeColor = Color.Black;
-            частотніТаблиціbtnSave.Location = new Point(406, 111);
-            частотніТаблиціbtnSave.Margin = new Padding(3, 4, 3, 4);
-            частотніТаблиціbtnSave.Name = "частотніТаблиціbtnSave";
-            частотніТаблиціbtnSave.Size = new Size(171, 67);
-            частотніТаблиціbtnSave.TabIndex = 3;
-            частотніТаблиціbtnSave.Text = "Зберегти";
-            частотніТаблиціbtnSave.UseVisualStyleBackColor = false;
-            частотніТаблиціbtnSave.Visible = false;
-            частотніТаблиціbtnSave.Click += частотніТаблиціbtnSave_Click;
+            Lab1btnSave.BackColor = Color.White;
+            Lab1btnSave.Font = new Font("Verdana", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            Lab1btnSave.ForeColor = Color.Black;
+            Lab1btnSave.Location = new Point(406, 111);
+            Lab1btnSave.Margin = new Padding(3, 4, 3, 4);
+            Lab1btnSave.Name = "частотніТаблиціbtnSave";
+            Lab1btnSave.Size = new Size(171, 67);
+            Lab1btnSave.TabIndex = 3;
+            Lab1btnSave.Text = "Зберегти";
+            Lab1btnSave.UseVisualStyleBackColor = false;
+            Lab1btnSave.Visible = false;
+            Lab1btnSave.Click += Lab1btnSave_Click;
             // 
             // частотніТаблиціdataGridView1
             // 
-            частотніТаблиціdataGridView1.BackgroundColor = SystemColors.ButtonFace;
-            частотніТаблиціdataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            частотніТаблиціdataGridView1.Location = new Point(625, 34);
-            частотніТаблиціdataGridView1.Margin = new Padding(3, 4, 3, 4);
-            частотніТаблиціdataGridView1.Name = "частотніТаблиціdataGridView1";
-            частотніТаблиціdataGridView1.RowHeadersWidth = 51;
-            частотніТаблиціdataGridView1.Size = new Size(403, 380);
-            частотніТаблиціdataGridView1.TabIndex = 4;
-            частотніТаблиціdataGridView1.CellContentClick += частотніТаблиціdataGridView1_CellContentClick;
-            частотніТаблиціdataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            Lab1dataGridView1.BackgroundColor = SystemColors.ButtonFace;
+            Lab1dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            Lab1dataGridView1.Location = new Point(625, 34);
+            Lab1dataGridView1.Margin = new Padding(3, 4, 3, 4);
+            Lab1dataGridView1.Name = "частотніТаблиціdataGridView1";
+            Lab1dataGridView1.RowHeadersWidth = 51;
+            Lab1dataGridView1.Size = new Size(403, 380);
+            Lab1dataGridView1.TabIndex = 4;
+            Lab1dataGridView1.CellContentClick += Lab1dataGridView1_CellContentClick;
+            Lab1dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
 
 
@@ -152,7 +152,7 @@ namespace Program
             Load += Form1_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)частотніТаблиціdataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Lab1dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -163,13 +163,13 @@ namespace Program
 
         #endregion
         private MenuStrip menuStrip1;
-        private ToolStripMenuItem частотніТаблиціToolStripMenuItem;
+        private ToolStripMenuItem Lab1ToolStripMenuItem;
         private ToolStripMenuItem шифрПростоїЗаміниToolStripMenuItem;
-        private System.Windows.Forms.TextBox частотніТаблиціtextBox;
-        private Button частотніТаблиціbuttonRun;
-        private DataGridView частотніТаблиціdataGridView1;
-        private Button частотніТаблиціbtnSave;
-        private Dictionary<char, int> частотніТаблиціfrequencies = new Dictionary<char, int>();
+        private System.Windows.Forms.TextBox Lab1textBox;
+        private Button Lab1buttonRun;
+        private DataGridView Lab1dataGridView1;
+        private Button Lab1btnSave;
+        private Dictionary<char, int> Lab1frequencies = new Dictionary<char, int>();
 
 
 
