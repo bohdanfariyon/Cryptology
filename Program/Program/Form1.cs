@@ -34,11 +34,7 @@ namespace Program
             return frequencies;
         }
 
-        private void частотніТаблиціWriteFrequenciesToFile(Dictionary<char, int> frequencies, string filePath)
-        {
-            string json = JsonConvert.SerializeObject(frequencies, Formatting.Indented);
-            File.WriteAllText(filePath, json);
-        }
+       
 
         private void частотніТаблиціDisplayFrequenciesInDataGridView(Dictionary<char, int> frequencies)
         {
@@ -64,15 +60,16 @@ namespace Program
         {
             string text = частотніТаблиціtextBox.Text;
 
-            Dictionary<char, int> frequencies = частотніТаблиціGetLetterFrequencies(text);
+
+            частотніТаблиціfrequencies = частотніТаблиціGetLetterFrequencies(text);
 
             string fileName = "Dict.json";
             string directoryPath = @"D:\ЛНУ\2 курс 2 семестр\Криптологія\Cryptology\Program\Program\Files";
             string filePath = Path.Combine(directoryPath, fileName);
 
-            частотніТаблиціWriteFrequenciesToFile(frequencies, filePath);
+            
 
-            частотніТаблиціDisplayFrequenciesInDataGridView(frequencies);
+            частотніТаблиціDisplayFrequenciesInDataGridView(частотніТаблиціfrequencies);
         }
 
         private void частотніТаблиціRun(object sender, EventArgs e)
@@ -120,13 +117,10 @@ namespace Program
             {
                 string filePath = saveFileDialog.FileName;
 
-                // Зчитуємо дані з файлу JSON
-                string json = File.ReadAllText(@"D:\ЛНУ\2 курс 2 семестр\Криптологія\Cryptology\Program\Program\Files\Dict.json");
-                Dictionary<string, int> dict = JsonConvert.DeserializeObject<Dictionary<string, int>>(json);
-
-                // Зберігаємо дані у файл JSON за вибраним користувачем місцем
-                string newJson = JsonConvert.SerializeObject(dict, Formatting.Indented);
+                
+                string newJson = JsonConvert.SerializeObject(частотніТаблиціfrequencies, Formatting.Indented);
                 File.WriteAllText(filePath, newJson);
+
 
                 MessageBox.Show("Дані збережено у файл JSON.");
             }

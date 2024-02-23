@@ -169,6 +169,8 @@ namespace Program
         private Button частотніТаблиціbuttonRun;
         private DataGridView частотніТаблиціdataGridView1;
         private Button частотніТаблиціbtnSave;
+        private Dictionary<char, int> частотніТаблиціfrequencies = new Dictionary<char, int>();
+
 
 
 
