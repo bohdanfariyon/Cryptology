@@ -155,9 +155,36 @@ namespace Program
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            // Встановлюємо початкові розміри та розташування елементів при завантаженні форми
-
+            
+            
         }
+        private void Form1_Resize(object sender, EventArgs e)
+        {
+            // Отримуємо розмір екрану
+            int screenWidth = Screen.PrimaryScreen.Bounds.Width;
+            int screenHeight = Screen.PrimaryScreen.Bounds.Height;
+
+            // Отримуємо нові розміри форми
+            int newWidth = this.Width;
+            int newHeight = this.Height;
+
+            // Оновлюємо розміри елементів пропорційно до нового розміру форми
+            частотніТаблиціtextBox.Width = newWidth / 3; // наприклад, ширина текстового поля - третина ширини форми
+            частотніТаблиціtextBox.Height = newHeight*3/4; // наприклад, висота текстового поля - половина висоти форми
+            частотніТаблиціdataGridView1.Width = newWidth / 3;
+            частотніТаблиціdataGridView1.Height = newHeight*3/4;
+
+            // Встановлюємо розташування елементів
+            Console.WriteLine("Width вікна: " + this.Width);
+
+            частотніТаблиціbuttonRun.Location = new Point((newWidth - частотніТаблиціbuttonRun.Width) / 2, (newHeight - частотніТаблиціbuttonRun.Height) / 2 - newHeight / 5);
+            частотніТаблиціbtnSave.Location = new Point((newWidth - частотніТаблиціbtnSave.Width) / 2, (newHeight - частотніТаблиціbtnSave.Height) / 2);
+            частотніТаблиціdataGridView1.Location = new Point(newWidth - частотніТаблиціdataGridView1.Width-35, 35); // зправа та в куті
+
+            // і так далі...
+        }
+
+
         class KeyComparer : IComparer<string>
         {
             public int Compare(string x, string y)

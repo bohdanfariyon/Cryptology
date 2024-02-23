@@ -35,6 +35,8 @@ namespace Program
         /// </summary>
         private void InitializeComponent()
         {
+            this.Resize += new EventHandler(Form1_Resize);
+
             menuStrip1 = new MenuStrip();
             частотніТаблиціToolStripMenuItem = new ToolStripMenuItem();
             шифрПростоїЗаміниToolStripMenuItem = new ToolStripMenuItem();
