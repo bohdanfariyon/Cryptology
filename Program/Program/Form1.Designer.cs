@@ -141,10 +141,7 @@ namespace Program
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1065, 600);
-            Controls.Add(частотніТаблиціdataGridView1);
-            Controls.Add(частотніТаблиціbtnSave);
-            Controls.Add(частотніТаблиціbuttonRun);
-            Controls.Add(частотніТаблиціtextBox);
+            
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Margin = new Padding(3, 4, 3, 4);

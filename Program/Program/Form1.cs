@@ -67,7 +67,7 @@ namespace Program
             Dictionary<char, int> frequencies = частотніТаблиціGetLetterFrequencies(text);
 
             string fileName = "Dict.json";
-            string directoryPath = @"D:\ЛНУ\2 курс 2 семестр\Криптологія\Program\Program\Files";
+            string directoryPath = @"D:\ЛНУ\2 курс 2 семестр\Криптологія\Cryptology\Program\Program\Files";
             string filePath = Path.Combine(directoryPath, fileName);
 
             частотніТаблиціWriteFrequenciesToFile(frequencies, filePath);
@@ -121,7 +121,7 @@ namespace Program
                 string filePath = saveFileDialog.FileName;
 
                 // Зчитуємо дані з файлу JSON
-                string json = File.ReadAllText(@"D:\ЛНУ\2 курс 2 семестр\Криптологія\Program\Program\Files\Dict.json");
+                string json = File.ReadAllText(@"D:\ЛНУ\2 курс 2 семестр\Криптологія\Cryptology\Program\Program\Files\Dict.json");
                 Dictionary<string, int> dict = JsonConvert.DeserializeObject<Dictionary<string, int>>(json);
 
                 // Зберігаємо дані у файл JSON за вибраним користувачем місцем
