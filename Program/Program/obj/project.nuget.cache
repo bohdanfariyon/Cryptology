@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "8fKLmZ+MTSScTP1DfY3tdEFb43lWYSXlU4/iz2oeJTW3I0n2V+CrEdhL3IciGZDEGjW3yt8KZ4H/lLOF4kUETQ==",
+  "success": true,
+  "projectFilePath": "D:\\ЛНУ\\2 курс 2 семестр\\Криптологія\\Program\\Program\\Program.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Богдан\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
