@@ -34,14 +34,36 @@ namespace Program
             return frequencies;
         }
 
-       
+        private void Lab1ReadFrequenciesFromFile(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "JSON Files|*.json|All Files|*.*";
+            openFileDialog.Title = "Виберіть файл JSON для зчитування";
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string filePath = openFileDialog.FileName;
+
+                // Зчитуємо JSON з файлу
+                string json = File.ReadAllText(filePath);
+
+                // Десеріалізуємо JSON в словник
+                Dictionary<char, int> frequencies = JsonConvert.DeserializeObject<Dictionary<char, int>>(json);
+
+                // Викликаємо вашу функцію для відображення частот у DataGridView
+                Lab1DisplayFrequenciesInDataGridView(frequencies);
+            }
+        }
+
+
+
 
         private void Lab1DisplayFrequenciesInDataGridView(Dictionary<char, int> frequencies)
         {
 
             DataTable table = new DataTable();
 
-            table.Columns.Add("Літера", typeof(char));
+            table.Columns.Add("Символ", typeof(char));
             table.Columns.Add("Частота", typeof(int));
 
             foreach (var pair in frequencies)
@@ -100,10 +122,12 @@ namespace Program
             // Додаємо DataGridView до контролів форми
             Controls.Add(Lab1dataGridView1);
             Lab1buttonRun.Visible = true;
+            Lab1btnLoad.Visible = true;
             Lab1btnSave.Visible = true;
             Lab1textBox.Visible = true; // Робимо текстовий бокс видимим
             Controls.Add(Lab1textBox); // Додавання нового елемента
             Controls.Add(Lab1buttonRun);
+            Controls.Add(Lab1btnLoad);
             Controls.Add(Lab1btnSave);
         }
         private void Lab1btnSave_Click(object sender, EventArgs e)
@@ -173,6 +197,7 @@ namespace Program
 
             Lab1buttonRun.Location = new Point((newWidth - Lab1buttonRun.Width) / 2, (newHeight - Lab1buttonRun.Height) / 2 - newHeight / 5);
             Lab1btnSave.Location = new Point((newWidth - Lab1btnSave.Width) / 2, (newHeight - Lab1btnSave.Height) / 2);
+            Lab1btnLoad.Location = new Point((newWidth - Lab1btnSave.Width) / 2, (newHeight - Lab1btnSave.Height) / 2 + newHeight / 5);
             Lab1dataGridView1.Location = new Point(newWidth - Lab1dataGridView1.Width-35, 35); // зправа та в куті
 
             // і так далі...

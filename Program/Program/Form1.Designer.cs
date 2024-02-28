@@ -44,6 +44,7 @@ namespace Program
             Lab1buttonRun = new Button();
             Lab1btnSave = new Button();
             Lab1dataGridView1 = new DataGridView();
+            Lab1btnLoad = new Button();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Lab1dataGridView1).BeginInit();
             SuspendLayout();
@@ -93,9 +94,9 @@ namespace Program
             // 
             // частотніТаблиціbuttonRun
             // 
-            Lab1buttonRun.BackColor = Color.White;
+            Lab1buttonRun.BackColor = Color.Black;
             Lab1buttonRun.Font = new Font("Verdana", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            Lab1buttonRun.ForeColor = Color.Black;
+            Lab1buttonRun.ForeColor = Color.White;
             Lab1buttonRun.Location = new Point(406, 36);
             Lab1buttonRun.Margin = new Padding(3, 4, 3, 4);
             Lab1buttonRun.Name = "частотніТаблиціbuttonRun";
@@ -108,9 +109,9 @@ namespace Program
             // 
             // частотніТаблиціbtnSave
             // 
-            Lab1btnSave.BackColor = Color.White;
+            Lab1btnSave.BackColor = Color.Black;
             Lab1btnSave.Font = new Font("Verdana", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            Lab1btnSave.ForeColor = Color.Black;
+            Lab1btnSave.ForeColor = Color.White;
             Lab1btnSave.Location = new Point(406, 111);
             Lab1btnSave.Margin = new Padding(3, 4, 3, 4);
             Lab1btnSave.Name = "частотніТаблиціbtnSave";
@@ -135,6 +136,20 @@ namespace Program
             Lab1dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
 
+            Lab1btnLoad.BackColor = Color.Black;
+            Lab1btnLoad.Font = new Font("Verdana", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            Lab1btnLoad.ForeColor = Color.White;
+            Lab1btnLoad.Location = new Point(406, 111);
+            Lab1btnLoad.Margin = new Padding(3, 4, 3, 4);
+            Lab1btnLoad.Name = "частотніТаблиціbtnSave";
+            Lab1btnLoad.Size = new Size(171, 67);
+            Lab1btnLoad.TabIndex = 3;
+            Lab1btnLoad.Text = "Завантажити";
+            Lab1btnLoad.UseVisualStyleBackColor = false;
+            Lab1btnLoad.Visible = false;
+            Lab1btnLoad.Click += Lab1ReadFrequenciesFromFile;
+
+
 
             // 
             // Form1
@@ -145,6 +160,7 @@ namespace Program
             ClientSize = new Size(1065, 600);
             
             Controls.Add(menuStrip1);
+           
             MainMenuStrip = menuStrip1;
             Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
@@ -170,6 +186,7 @@ namespace Program
         private DataGridView Lab1dataGridView1;
         private Button Lab1btnSave;
         private Dictionary<char, int> Lab1frequencies = new Dictionary<char, int>();
+        private Button Lab1btnLoad;
 
 
 
