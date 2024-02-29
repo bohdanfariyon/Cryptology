@@ -1,4 +1,5 @@
 using System.Data;
+using System.Globalization;
 using System.Text.RegularExpressions;
 using Newtonsoft.Json;
 using static System.Net.Mime.MediaTypeNames;
@@ -12,10 +13,10 @@ namespace Program
             InitializeComponent();
         }
 
-        private Dictionary<char, int> Lab1GetLetterFrequencies(string text)
+        private Dictionary<char, double> Lab1GetLetterProbabilities(string text)
         {
             // Видалення всіх символів, залишаючи тільки літери та перетворення на нижній регістр
-            string onlyLetters = Regex.Replace(text, @"[^a-zA-Zа-яА-Я]", "").ToLower();
+            string onlyLetters = Regex.Replace(text, @"[^a-zA-Zа-яА-ЯіїєґІЇЄҐ]", "").ToLower(new CultureInfo("uk-UA"));
 
             // Підрахунок частоти кожної літери
             Dictionary<char, int> frequencies = new Dictionary<char, int>();
@@ -31,7 +32,32 @@ namespace Program
                 }
             }
 
-            return frequencies;
+            // Обчислення загальної кількості літер
+            int totalLetters = onlyLetters.Length;
+
+            // Обчислення ймовірності для кожної літери
+            Dictionary<char, double> probabilities = new Dictionary<char, double>();
+            foreach (var kvp in frequencies)
+            {
+                double probability = Math.Round((double)kvp.Value / totalLetters * 100, 2);
+                probabilities[kvp.Key] = probability;
+            }
+
+            return probabilities;
+        }
+        private void проРозробникаToolStripMenuItem_Click(object sender, EventArgs e)
+
+        {
+            MenuStrip menuStrip = menuStrip1;
+
+            for (int i = Controls.Count - 1; i >= 0; i--)
+            {
+                if (Controls[i] != menuStrip)
+                {
+                    Controls.RemoveAt(i);
+                }
+            }
+            MessageBox.Show(" Криптосистема\n Розробник: Фарійон Богдан\n Група: ПМА-23\n Рік: 2024");
         }
 
         private void Lab1ReadFrequenciesFromFile(object sender, EventArgs e)
@@ -48,7 +74,7 @@ namespace Program
                 string json = File.ReadAllText(filePath);
 
                 // Десеріалізуємо JSON в словник
-                Dictionary<char, int> frequencies = JsonConvert.DeserializeObject<Dictionary<char, int>>(json);
+                Dictionary<char, double> frequencies = JsonConvert.DeserializeObject<Dictionary<char, double>>(json);
 
                 // Викликаємо вашу функцію для відображення частот у DataGridView
                 Lab1DisplayFrequenciesInDataGridView(frequencies);
@@ -58,13 +84,13 @@ namespace Program
 
 
 
-        private void Lab1DisplayFrequenciesInDataGridView(Dictionary<char, int> frequencies)
+        private void Lab1DisplayFrequenciesInDataGridView(Dictionary<char, double> frequencies)
         {
 
             DataTable table = new DataTable();
 
             table.Columns.Add("Символ", typeof(char));
-            table.Columns.Add("Частота", typeof(int));
+            table.Columns.Add("Частота", typeof(double));
 
             foreach (var pair in frequencies)
             {
@@ -83,7 +109,7 @@ namespace Program
             string text = Lab1textBox.Text;
 
 
-            Lab1frequencies = Lab1GetLetterFrequencies(text);
+            Lab1frequencies = Lab1GetLetterProbabilities(text);
 
             string fileName = "Dict.json";
             string directoryPath = @"D:\ЛНУ\2 курс 2 семестр\Криптологія\Cryptology\Program\Program\Files";

@@ -45,6 +45,7 @@ namespace Program
             Lab1btnSave = new Button();
             Lab1dataGridView1 = new DataGridView();
             Lab1btnLoad = new Button();
+            проСистемуToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Lab1dataGridView1).BeginInit();
             SuspendLayout();
@@ -54,13 +55,21 @@ namespace Program
             menuStrip1.BackColor = Color.FromArgb(64, 64, 64);
             menuStrip1.Font = new Font("Verdana", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { Lab1ToolStripMenuItem, шифрПростоїЗаміниToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { Lab1ToolStripMenuItem, шифрПростоїЗаміниToolStripMenuItem, проСистемуToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Padding = new Padding(7, 3, 0, 3);
             menuStrip1.Size = new Size(1065, 30);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
+
+            проСистемуToolStripMenuItem.ForeColor = Color.White;
+            проСистемуToolStripMenuItem.Name = "проСистемуToolStripMenuItem";
+            проСистемуToolStripMenuItem.ShortcutKeys = Keys.Alt | Keys.F;
+            проСистемуToolStripMenuItem.Size = new Size(169, 24);
+            проСистемуToolStripMenuItem.Text = "Про розробника";
+            проСистемуToolStripMenuItem.Click += Lab1ToolStripMenuItem_Click;
+            проСистемуToolStripMenuItem.Click += проРозробникаToolStripMenuItem_Click;
             // 
             // частотніТаблиціToolStripMenuItem
             // 
@@ -185,8 +194,9 @@ namespace Program
         private Button Lab1buttonRun;
         private DataGridView Lab1dataGridView1;
         private Button Lab1btnSave;
-        private Dictionary<char, int> Lab1frequencies = new Dictionary<char, int>();
+        private Dictionary<char, double> Lab1frequencies = new Dictionary<char, double>();
         private Button Lab1btnLoad;
+        private ToolStripMenuItem проСистемуToolStripMenuItem;
 
 
 
