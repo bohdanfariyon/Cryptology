@@ -23,7 +23,7 @@ namespace Program2
             panelContainer = new Panel();
             // Налаштування розміщення та розміру
             panelContainer.Dock = DockStyle.Fill;
-            panelContainer.BackColor = Color.Blue;
+            
             // Додавання на форму
             Controls.Add(panelContainer);
         }

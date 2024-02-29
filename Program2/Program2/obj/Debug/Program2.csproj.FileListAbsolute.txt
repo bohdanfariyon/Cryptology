@@ -11,3 +11,16 @@ D:\Data\C# Visual Studio\Program2\Program2\obj\Debug\Program2.pdb
 D:\Data\C# Visual Studio\Program2\Program2\bin\Debug\Newtonsoft.Json.dll
 D:\Data\C# Visual Studio\Program2\Program2\bin\Debug\Newtonsoft.Json.xml
 D:\Data\C# Visual Studio\Program2\Program2\obj\Debug\Program2.csproj.CopyComplete
+D:\ЛНУ\2 курс 2 семестр\Криптологія\Cryptology\Program2\Program2\bin\Debug\Program2.exe.config
+D:\ЛНУ\2 курс 2 семестр\Криптологія\Cryptology\Program2\Program2\bin\Debug\Program2.exe
+D:\ЛНУ\2 курс 2 семестр\Криптологія\Cryptology\Program2\Program2\bin\Debug\Program2.pdb
+D:\ЛНУ\2 курс 2 семестр\Криптологія\Cryptology\Program2\Program2\bin\Debug\Newtonsoft.Json.dll
+D:\ЛНУ\2 курс 2 семестр\Криптологія\Cryptology\Program2\Program2\bin\Debug\Newtonsoft.Json.xml
+D:\ЛНУ\2 курс 2 семестр\Криптологія\Cryptology\Program2\Program2\obj\Debug\Program2.csproj.AssemblyReference.cache
+D:\ЛНУ\2 курс 2 семестр\Криптологія\Cryptology\Program2\Program2\obj\Debug\Program2.Form1.resources
+D:\ЛНУ\2 курс 2 семестр\Криптологія\Cryptology\Program2\Program2\obj\Debug\Program2.Properties.Resources.resources
+D:\ЛНУ\2 курс 2 семестр\Криптологія\Cryptology\Program2\Program2\obj\Debug\Program2.csproj.GenerateResource.cache
+D:\ЛНУ\2 курс 2 семестр\Криптологія\Cryptology\Program2\Program2\obj\Debug\Program2.csproj.CoreCompileInputs.cache
+D:\ЛНУ\2 курс 2 семестр\Криптологія\Cryptology\Program2\Program2\obj\Debug\Program2.csproj.CopyComplete
+D:\ЛНУ\2 курс 2 семестр\Криптологія\Cryptology\Program2\Program2\obj\Debug\Program2.exe
+D:\ЛНУ\2 курс 2 семестр\Криптологія\Cryptology\Program2\Program2\obj\Debug\Program2.pdb

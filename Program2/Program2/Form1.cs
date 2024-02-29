@@ -28,9 +28,7 @@ namespace Program2
 
             Lab1frequencies = Lab1GetLetterProbabilities(text);
 
-            string fileName = "Dict.json";
-            string directoryPath = @"D:\ЛНУ\2 курс 2 семестр\Криптологія\Cryptology\Program\Program\Files";
-            string filePath = Path.Combine(directoryPath, fileName);
+            
 
 
 
