@@ -1,0 +1,13 @@
+D:\Data\C# Visual Studio\Program2\Program2\bin\Debug\Program2.exe.config
+D:\Data\C# Visual Studio\Program2\Program2\bin\Debug\Program2.exe
+D:\Data\C# Visual Studio\Program2\Program2\bin\Debug\Program2.pdb
+D:\Data\C# Visual Studio\Program2\Program2\obj\Debug\Program2.csproj.AssemblyReference.cache
+D:\Data\C# Visual Studio\Program2\Program2\obj\Debug\Program2.Form1.resources
+D:\Data\C# Visual Studio\Program2\Program2\obj\Debug\Program2.Properties.Resources.resources
+D:\Data\C# Visual Studio\Program2\Program2\obj\Debug\Program2.csproj.GenerateResource.cache
+D:\Data\C# Visual Studio\Program2\Program2\obj\Debug\Program2.csproj.CoreCompileInputs.cache
+D:\Data\C# Visual Studio\Program2\Program2\obj\Debug\Program2.exe
+D:\Data\C# Visual Studio\Program2\Program2\obj\Debug\Program2.pdb
+D:\Data\C# Visual Studio\Program2\Program2\bin\Debug\Newtonsoft.Json.dll
+D:\Data\C# Visual Studio\Program2\Program2\bin\Debug\Newtonsoft.Json.xml
+D:\Data\C# Visual Studio\Program2\Program2\obj\Debug\Program2.csproj.CopyComplete
