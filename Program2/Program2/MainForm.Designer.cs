@@ -68,7 +68,7 @@ namespace Program2
             this.шифрПростоїЗаміниToolStripMenuItem.Name = "шифрПростоїЗаміниToolStripMenuItem";
             this.шифрПростоїЗаміниToolStripMenuItem.Size = new System.Drawing.Size(151, 24);
             this.шифрПростоїЗаміниToolStripMenuItem.Text = "Шифр простої заміни";
-            this.шифрПростоїЗаміниToolStripMenuItem.Click += new System.EventHandler(this.openForm1ToolStripMenuItem_Click);
+            this.шифрПростоїЗаміниToolStripMenuItem.Click += new System.EventHandler(this.openForm2ToolStripMenuItem_Click);
             // 
             // проСистемуToolStripMenuItem
             // 

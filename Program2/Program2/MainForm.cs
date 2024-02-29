@@ -38,5 +38,17 @@ namespace Program2
             panelContainer.Controls.Add(form1);
             form1.Show();
         }
+
+        private void openForm2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+            Form2 form2 = new Form2();
+            form2.TopLevel = false;
+            form2.FormBorderStyle = FormBorderStyle.None;
+            form2.Dock = DockStyle.Fill;
+            panelContainer.Controls.Clear();
+            panelContainer.Controls.Add(form2);
+            form2.Show();
+        }
     }
 }
