@@ -70,13 +70,21 @@
             // 
             // btn_create
             // 
+            this.btn_create.BackColor = System.Drawing.Color.Black;
+            this.btn_create.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btn_create.ForeColor = System.Drawing.Color.White;
+            this.btn_create.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_create.Location = new System.Drawing.Point(57, 328);
             this.btn_create.Name = "btn_create";
-            this.btn_create.Size = new System.Drawing.Size(145, 71);
+            this.btn_create.Size = new System.Drawing.Size(171, 67);
             this.btn_create.TabIndex = 1;
             this.btn_create.Text = "Створити\r\n";
             this.btn_create.UseVisualStyleBackColor = true;
             this.btn_create.Click += new System.EventHandler(this.btn_create_Click);
+            this.btn_create.UseVisualStyleBackColor = false;
+
+            
+            
             // 
             // textBoxInput
             // 
@@ -86,6 +94,8 @@
             this.textBoxInput.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBoxInput.Size = new System.Drawing.Size(226, 210);
             this.textBoxInput.TabIndex = 2;
+            this.textBoxInput.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold);
+            this.textBoxInput.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             // 
             // textBoxOutput
             // 
@@ -95,6 +105,8 @@
             this.textBoxOutput.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBoxOutput.Size = new System.Drawing.Size(226, 210);
             this.textBoxOutput.TabIndex = 3;
+            this.textBoxOutput.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold);
+            this.textBoxOutput.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             // 
             // btnRun
             // 
@@ -105,6 +117,11 @@
             this.btnRun.Text = "Зашифрувати";
             this.btnRun.UseVisualStyleBackColor = true;
             this.btnRun.Click += new System.EventHandler(this.btnRun_Click);
+            this.btnRun.BackColor = System.Drawing.Color.Black;
+            this.btnRun.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnRun.ForeColor = System.Drawing.Color.White;
+            this.btnRun.Size = new System.Drawing.Size(171, 67);
+            this.btnRun.UseVisualStyleBackColor = false;
             // 
             // btnDec
             // 
@@ -115,6 +132,11 @@
             this.btnDec.Text = "Розшифрувати";
             this.btnDec.UseVisualStyleBackColor = true;
             this.btnDec.Click += new System.EventHandler(this.btnDec_Click);
+            this.btnDec.BackColor = System.Drawing.Color.Black;
+            this.btnDec.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnDec.ForeColor = System.Drawing.Color.White;
+            this.btnDec.Size = new System.Drawing.Size(171, 67);
+            this.btnDec.UseVisualStyleBackColor = false;
             // 
             // Form2
             // 
