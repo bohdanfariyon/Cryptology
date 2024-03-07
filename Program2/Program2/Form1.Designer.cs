@@ -64,7 +64,6 @@ namespace Program2
             this.Lab1buttonRun.TabIndex = 2;
             this.Lab1buttonRun.Text = "Виконати";
             this.Lab1buttonRun.UseVisualStyleBackColor = false;
-            this.Lab1buttonRun.Click += Lab1Run;
             // 
             // Lab1btnSave
             // 
@@ -78,14 +77,13 @@ namespace Program2
             this.Lab1btnSave.TabIndex = 3;
             this.Lab1btnSave.Text = "Зберегти";
             this.Lab1btnSave.UseVisualStyleBackColor = false;
-            this.Lab1btnSave.Click += Lab1btnSave_Click;
             // 
             // Lab1dataGridView1
             // 
             this.Lab1dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.Lab1dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.Lab1dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Lab1dataGridView1.Location = new System.Drawing.Point(625, 34);
+            this.Lab1dataGridView1.Location = new System.Drawing.Point(334, 36);
             this.Lab1dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Lab1dataGridView1.Name = "Lab1dataGridView1";
             this.Lab1dataGridView1.RowHeadersWidth = 51;
@@ -104,7 +102,6 @@ namespace Program2
             this.Lab1btnLoad.TabIndex = 3;
             this.Lab1btnLoad.Text = "Завантажити";
             this.Lab1btnLoad.UseVisualStyleBackColor = false;
-            this.Lab1btnLoad.Click += Lab1ReadFrequenciesFromFile;
             // 
             // Form1
             // 
