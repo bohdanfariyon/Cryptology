@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.button3 = new System.Windows.Forms.Button();
@@ -38,8 +40,8 @@
             this.textBoxOutput = new System.Windows.Forms.TextBox();
             this.btn_dec = new System.Windows.Forms.Button();
             this.btn_save = new System.Windows.Forms.Button();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_sav = new System.Windows.Forms.Button();
+            this.btn_load = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -61,6 +63,18 @@
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(302, 150);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Ключ";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Ключ";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
             // 
             // dataGridView2
             // 
@@ -175,23 +189,39 @@
             this.btn_save.UseVisualStyleBackColor = false;
             this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
-            // Column1
+            // btn_sav
             // 
-            this.Column1.HeaderText = "Ключ";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
+            this.btn_sav.BackColor = System.Drawing.Color.Black;
+            this.btn_sav.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btn_sav.ForeColor = System.Drawing.Color.White;
+            this.btn_sav.Location = new System.Drawing.Point(212, 88);
+            this.btn_sav.Name = "btn_sav";
+            this.btn_sav.Size = new System.Drawing.Size(171, 67);
+            this.btn_sav.TabIndex = 10;
+            this.btn_sav.Text = "Зберегти";
+            this.btn_sav.UseVisualStyleBackColor = false;
+            this.btn_sav.Click += new System.EventHandler(this.btn_sav_Click);
             // 
-            // Column2
+            // btn_load
             // 
-            this.Column2.HeaderText = "Ключ";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
+            this.btn_load.BackColor = System.Drawing.Color.Black;
+            this.btn_load.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btn_load.ForeColor = System.Drawing.Color.White;
+            this.btn_load.Location = new System.Drawing.Point(566, 88);
+            this.btn_load.Name = "btn_load";
+            this.btn_load.Size = new System.Drawing.Size(171, 67);
+            this.btn_load.TabIndex = 11;
+            this.btn_load.Text = "Завантажити";
+            this.btn_load.UseVisualStyleBackColor = false;
+            this.btn_load.Click += new System.EventHandler(this.btn_load_Click);
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_load);
+            this.Controls.Add(this.btn_sav);
             this.Controls.Add(this.btn_save);
             this.Controls.Add(this.btn_dec);
             this.Controls.Add(this.textBoxOutput);
@@ -229,5 +259,7 @@
         private System.Windows.Forms.Button btn_save;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.Button btn_sav;
+        private System.Windows.Forms.Button btn_load;
     }
 }

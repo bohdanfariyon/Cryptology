@@ -121,11 +121,11 @@ namespace Program2
                 string column1Value = i < column1Data.Length ? column1Data[i] : "";
                 string column2Value = i < column2Data.Length ? column2Data[i] : "";
 
-                dataGridView1.Rows.Add(column1Value, column2Value);
+                dataGridView1.Rows.Add(column2Value, column1Value);
 
                 
-                dataFromColumn1 += column1Value + Environment.NewLine;
-                dataFromColumn2 += column2Value + Environment.NewLine;
+                dataFromColumn2 += column1Value + Environment.NewLine;
+                dataFromColumn1 += column2Value + Environment.NewLine;
             }
         }
         private void Form3_Resize(object sender, EventArgs e)
@@ -153,8 +153,11 @@ namespace Program2
             dataGridView3.Location = new Point((newWidth) / 16, (newHeight - btn_dec.Height) / 2 + 90);
             button3.Location = new Point((newWidth) / 16 +45, (newHeight - btn_dec.Height) / 2 + 220);
             dataGridView1.Location = new Point((newWidth) / 2 -120, (newHeight - btn_dec.Height) / 2 );
-            button1.Location = new Point((newWidth) / 2 - 70, (newHeight - btn_dec.Height) / 2 + 130);
-            btn_save.Location = new Point((newWidth) / 2 - 70, (newHeight - btn_dec.Height) / 2 + 200);
+            button1.Location = new Point((newWidth) / 2 - 140, (newHeight - btn_dec.Height) / 2 + 130);
+            btn_sav.Location = new Point((newWidth) / 2 , (newHeight - btn_dec.Height) / 2 + 130);
+            btn_save.Location = new Point((newWidth) / 2 - 140, (newHeight - btn_dec.Height) / 2 + 200);
+            btn_load.Location = new Point((newWidth) / 2 , (newHeight - btn_dec.Height) / 2 + 200);
+
             textBoxOutput.Location = new Point(newWidth - textBoxOutput.Width - 35, 29); // зправа та в куті
 
 
@@ -208,6 +211,62 @@ namespace Program2
             else
             {
                 MessageBox.Show("Будь ласка, виберіть хоча б одну комірку в кожному стовпці.");
+            }
+        }
+
+        private void btn_load_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "JSON Files|*.json|All Files|*.*";
+            openFileDialog.Title = "Відкрити файл JSON";
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string filePath = openFileDialog.FileName;
+
+                // Завантажуємо дані з файлу JSON
+                string json = File.ReadAllText(filePath);
+                var data = JsonConvert.DeserializeObject<dynamic>(json);
+
+                // Записуємо дані у змінні
+                dataFromColumn1 = data.Column1;
+                dataFromColumn2 = data.Column2;
+
+                // Відображаємо дані у таблиці
+                dataGridView1.Rows.Clear();
+                string[] column1Data = ((string)data.Column1).Split(new[] { "\r\n" }, StringSplitOptions.RemoveEmptyEntries);
+                string[] column2Data = ((string)data.Column2).Split(new[] { "\r\n" }, StringSplitOptions.RemoveEmptyEntries);
+                for (int i = 0; i < Math.Min(column1Data.Length, column2Data.Length); i++)
+                {
+                    dataGridView1.Rows.Add(column1Data[i], column2Data[i]);
+                }
+
+                MessageBox.Show("Дані завантажено з файлу JSON.");
+            }
+        }
+
+        private void btn_sav_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "JSON Files|*.json|All Files|*.*";
+            saveFileDialog.Title = "Зберегти файл JSON";
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string filePath = saveFileDialog.FileName;
+
+                // Створюємо об'єкт для збереження даних з dataGridView1
+                var dataToSave = new
+                {
+                    Column1 = dataFromColumn1,
+                    Column2 = dataFromColumn2
+                };
+
+                // Перетворюємо дані у формат JSON та зберігаємо у файл
+                string jsonData = JsonConvert.SerializeObject(dataToSave, Newtonsoft.Json.Formatting.Indented);
+                File.WriteAllText(filePath, jsonData);
+
+                MessageBox.Show("Таблицю збережено у файл JSON.");
             }
         }
     }
