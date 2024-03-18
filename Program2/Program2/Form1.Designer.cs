@@ -44,7 +44,7 @@ namespace Program2
             // Lab1textBox
             // 
             this.Lab1textBox.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold);
-            this.Lab1textBox.Location = new System.Drawing.Point(14, 36);
+            this.Lab1textBox.Location = new System.Drawing.Point(-6, 57);
             this.Lab1textBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Lab1textBox.Multiline = true;
             this.Lab1textBox.Name = "Lab1textBox";
@@ -64,26 +64,28 @@ namespace Program2
             this.Lab1buttonRun.TabIndex = 2;
             this.Lab1buttonRun.Text = "Виконати";
             this.Lab1buttonRun.UseVisualStyleBackColor = false;
+            this.Lab1buttonRun.Click += new System.EventHandler(this.Lab1Run);
             // 
             // Lab1btnSave
             // 
             this.Lab1btnSave.BackColor = System.Drawing.Color.Black;
             this.Lab1btnSave.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold);
             this.Lab1btnSave.ForeColor = System.Drawing.Color.White;
-            this.Lab1btnSave.Location = new System.Drawing.Point(406, 111);
+            this.Lab1btnSave.Location = new System.Drawing.Point(406, 186);
             this.Lab1btnSave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Lab1btnSave.Name = "Lab1btnSave";
             this.Lab1btnSave.Size = new System.Drawing.Size(171, 67);
             this.Lab1btnSave.TabIndex = 3;
             this.Lab1btnSave.Text = "Зберегти";
             this.Lab1btnSave.UseVisualStyleBackColor = false;
+            this.Lab1btnSave.Click += new System.EventHandler(this.Lab1btnSave_Click);
             // 
             // Lab1dataGridView1
             // 
             this.Lab1dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.Lab1dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.Lab1dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Lab1dataGridView1.Location = new System.Drawing.Point(334, 36);
+            this.Lab1dataGridView1.Location = new System.Drawing.Point(644, 57);
             this.Lab1dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Lab1dataGridView1.Name = "Lab1dataGridView1";
             this.Lab1dataGridView1.RowHeadersWidth = 51;
@@ -102,6 +104,7 @@ namespace Program2
             this.Lab1btnLoad.TabIndex = 3;
             this.Lab1btnLoad.Text = "Завантажити";
             this.Lab1btnLoad.UseVisualStyleBackColor = false;
+            this.Lab1btnLoad.Click += new System.EventHandler(this.Lab1ReadFrequenciesFromFile);
             // 
             // Form1
             // 

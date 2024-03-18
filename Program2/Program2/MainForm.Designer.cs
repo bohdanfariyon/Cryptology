@@ -33,6 +33,7 @@ namespace Program2
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.Lab1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.шифрПростоїЗаміниToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.частотнийАналізToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.проСистемуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelContainer = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
@@ -46,6 +47,7 @@ namespace Program2
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.Lab1ToolStripMenuItem,
             this.шифрПростоїЗаміниToolStripMenuItem,
+            this.частотнийАналізToolStripMenuItem,
             this.проСистемуToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -69,6 +71,14 @@ namespace Program2
             this.шифрПростоїЗаміниToolStripMenuItem.Size = new System.Drawing.Size(151, 24);
             this.шифрПростоїЗаміниToolStripMenuItem.Text = "Шифр простої заміни";
             this.шифрПростоїЗаміниToolStripMenuItem.Click += new System.EventHandler(this.openForm2ToolStripMenuItem_Click);
+            // 
+            // частотнийАналізToolStripMenuItem
+            // 
+            this.частотнийАналізToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.частотнийАналізToolStripMenuItem.Name = "частотнийАналізToolStripMenuItem";
+            this.частотнийАналізToolStripMenuItem.Size = new System.Drawing.Size(151, 24);
+            this.частотнийАналізToolStripMenuItem.Text = "Частотний аналіз";
+            this.частотнийАналізToolStripMenuItem.Click += new System.EventHandler(this.openForm3ToolStripMenuItem_Click);
             // 
             // проСистемуToolStripMenuItem
             // 
@@ -109,5 +119,6 @@ namespace Program2
         private ToolStripMenuItem Lab1ToolStripMenuItem;
         private ToolStripMenuItem проСистемуToolStripMenuItem;
         private ToolStripMenuItem шифрПростоїЗаміниToolStripMenuItem;
+        private ToolStripMenuItem частотнийАналізToolStripMenuItem;
     }
 }
