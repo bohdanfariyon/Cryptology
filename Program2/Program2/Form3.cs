@@ -121,7 +121,7 @@ namespace Program2
                 string column1Value = i < column1Data.Length ? column1Data[i] : "";
                 string column2Value = i < column2Data.Length ? column2Data[i] : "";
 
-                dataGridView1.Rows.Add(column2Value, column1Value);
+                dataGridView1.Rows.Add(column1Value, column2Value);
 
                 
                 dataFromColumn1 += column1Value + Environment.NewLine;
