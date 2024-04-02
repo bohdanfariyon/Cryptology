@@ -34,6 +34,7 @@ namespace Program2
             this.Lab1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.шифрПростоїЗаміниToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.частотнийАналізToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.шифрВіженераToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.проСистемуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelContainer = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
@@ -48,6 +49,7 @@ namespace Program2
             this.Lab1ToolStripMenuItem,
             this.шифрПростоїЗаміниToolStripMenuItem,
             this.частотнийАналізToolStripMenuItem,
+            this.шифрВіженераToolStripMenuItem,
             this.проСистемуToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -79,6 +81,14 @@ namespace Program2
             this.частотнийАналізToolStripMenuItem.Size = new System.Drawing.Size(151, 24);
             this.частотнийАналізToolStripMenuItem.Text = "Частотний аналіз";
             this.частотнийАналізToolStripMenuItem.Click += new System.EventHandler(this.openForm3ToolStripMenuItem_Click);
+            // 
+            // шифрВіженераToolStripMenuItem
+            // 
+            this.шифрВіженераToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.шифрВіженераToolStripMenuItem.Name = "шифрВіженераToolStripMenuItem";
+            this.шифрВіженераToolStripMenuItem.Size = new System.Drawing.Size(151, 24);
+            this.шифрВіженераToolStripMenuItem.Text = "Шифр Віженера";
+            this.шифрВіженераToolStripMenuItem.Click += new System.EventHandler(this.openForm4ToolStripMenuItem_Click);
             // 
             // проСистемуToolStripMenuItem
             // 
@@ -120,5 +130,6 @@ namespace Program2
         private ToolStripMenuItem проСистемуToolStripMenuItem;
         private ToolStripMenuItem шифрПростоїЗаміниToolStripMenuItem;
         private ToolStripMenuItem частотнийАналізToolStripMenuItem;
+        private ToolStripMenuItem шифрВіженераToolStripMenuItem;
     }
 }
