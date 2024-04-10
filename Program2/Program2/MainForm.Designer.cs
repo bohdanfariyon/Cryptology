@@ -35,6 +35,7 @@ namespace Program2
             this.шифрПростоїЗаміниToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.частотнийАналізToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.шифрВіженераToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.шифрВерманаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.проСистемуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelContainer = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
@@ -50,6 +51,7 @@ namespace Program2
             this.шифрПростоїЗаміниToolStripMenuItem,
             this.частотнийАналізToolStripMenuItem,
             this.шифрВіженераToolStripMenuItem,
+            this.шифрВерманаToolStripMenuItem,
             this.проСистемуToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -89,6 +91,14 @@ namespace Program2
             this.шифрВіженераToolStripMenuItem.Size = new System.Drawing.Size(151, 24);
             this.шифрВіженераToolStripMenuItem.Text = "Шифр Віженера";
             this.шифрВіженераToolStripMenuItem.Click += new System.EventHandler(this.openForm4ToolStripMenuItem_Click);
+            // 
+            // шифрВерманаToolStripMenuItem
+            // 
+            this.шифрВерманаToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.шифрВерманаToolStripMenuItem.Name = "шифрВерманаToolStripMenuItem";
+            this.шифрВерманаToolStripMenuItem.Size = new System.Drawing.Size(151, 24);
+            this.шифрВерманаToolStripMenuItem.Text = "Шифр Вермана";
+            this.шифрВерманаToolStripMenuItem.Click += new System.EventHandler(this.openForm5ToolStripMenuItem_Click);
             // 
             // проСистемуToolStripMenuItem
             // 
@@ -131,5 +141,6 @@ namespace Program2
         private ToolStripMenuItem шифрПростоїЗаміниToolStripMenuItem;
         private ToolStripMenuItem частотнийАналізToolStripMenuItem;
         private ToolStripMenuItem шифрВіженераToolStripMenuItem;
+        private ToolStripMenuItem шифрВерманаToolStripMenuItem;
     }
 }
