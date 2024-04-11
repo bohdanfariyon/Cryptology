@@ -60,8 +60,7 @@ namespace Program2
 
             for (int i = 0; i < plainBytes.Length; i++)
             {
-                // Використовуємо остаточне ділення (%) для циклічного використання ключа,
-                // якщо він коротший за текст
+                
                 encryptedBytes[i] = (byte)(plainBytes[i] ^ keyBytes[i % keyBytes.Length]);
             }
 
@@ -77,8 +76,7 @@ namespace Program2
 
             for (int i = 0; i < cipherBytes.Length; i++)
             {
-                // Використовуємо остаточне ділення (%) для циклічного використання ключа,
-                // якщо він коротший за шифрований текст
+                
                 decryptedBytes[i] = (byte)(cipherBytes[i] ^ keyBytes[i % keyBytes.Length]);
             }
 

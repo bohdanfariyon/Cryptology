@@ -37,6 +37,7 @@ namespace Program2
             this.шифрВіженераToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.шифрВерманаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.проСистемуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.евклідБінарнийВибірToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelContainer = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -52,6 +53,7 @@ namespace Program2
             this.частотнийАналізToolStripMenuItem,
             this.шифрВіженераToolStripMenuItem,
             this.шифрВерманаToolStripMenuItem,
+            this.евклідБінарнийВибірToolStripMenuItem,
             this.проСистемуToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -108,6 +110,14 @@ namespace Program2
             this.проСистемуToolStripMenuItem.Text = "Про систему";
             this.проСистемуToolStripMenuItem.Click += new System.EventHandler(this.openForm1ToolStripMenuItem_Click);
             // 
+            // евклідБінарнийВибірToolStripMenuItem
+            // 
+            this.евклідБінарнийВибірToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.евклідБінарнийВибірToolStripMenuItem.Name = "евклідБінарнийВибірToolStripMenuItem";
+            this.евклідБінарнийВибірToolStripMenuItem.Size = new System.Drawing.Size(105, 24);
+            this.евклідБінарнийВибірToolStripMenuItem.Text = "Евклід Бінарний Вибір";
+            this.евклідБінарнийВибірToolStripMenuItem.Click += new System.EventHandler(this.openForm6ToolStripMenuItem_Click);
+            // 
             // panelContainer
             // 
             this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -142,5 +152,6 @@ namespace Program2
         private ToolStripMenuItem частотнийАналізToolStripMenuItem;
         private ToolStripMenuItem шифрВіженераToolStripMenuItem;
         private ToolStripMenuItem шифрВерманаToolStripMenuItem;
+        private ToolStripMenuItem евклідБінарнийВибірToolStripMenuItem;
     }
 }
