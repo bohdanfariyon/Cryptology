@@ -94,5 +94,27 @@ namespace Program2
             panelContainer.Controls.Add(form6);
             form6.Show();
         }
+        private void openForm7ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            Form7 form7 = new Form7();
+            form7.TopLevel = false;
+            form7.FormBorderStyle = FormBorderStyle.None;
+            form7.Dock = DockStyle.Fill;
+            panelContainer.Controls.Clear();
+            panelContainer.Controls.Add(form7);
+            form7.Show();
+        }
+        private void openForm8ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            Form8 form8 = new Form8();
+            form8.TopLevel = false;
+            form8.FormBorderStyle = FormBorderStyle.None;
+            form8.Dock = DockStyle.Fill;
+            panelContainer.Controls.Clear();
+            panelContainer.Controls.Add(form8);
+            form8.Show();
+        }
     }
 }

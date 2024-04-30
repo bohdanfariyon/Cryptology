@@ -36,9 +36,11 @@ namespace Program2
             this.частотнийАналізToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.шифрВіженераToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.шифрВерманаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.проСистемуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.евклідБінарнийВибірToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.проСистемуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelContainer = new System.Windows.Forms.Panel();
+            this.Lab7 = new System.Windows.Forms.ToolStripMenuItem();
+            this.Lab8 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,11 +56,15 @@ namespace Program2
             this.шифрВіженераToolStripMenuItem,
             this.шифрВерманаToolStripMenuItem,
             this.евклідБінарнийВибірToolStripMenuItem,
-            this.проСистемуToolStripMenuItem});
+            this.Lab7,
+            this.Lab8,
+            this.проСистемуToolStripMenuItem,
+            });
+
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 3, 0, 3);
-            this.menuStrip1.Size = new System.Drawing.Size(1065, 30);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(9, 4, 0, 4);
+            this.menuStrip1.Size = new System.Drawing.Size(1420, 32);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -66,57 +72,73 @@ namespace Program2
             // 
             this.Lab1ToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.Lab1ToolStripMenuItem.Name = "Lab1ToolStripMenuItem";
-            this.Lab1ToolStripMenuItem.Size = new System.Drawing.Size(112, 24);
-            this.Lab1ToolStripMenuItem.Text = "Частотні таблиці";
+            this.Lab1ToolStripMenuItem.Size = new System.Drawing.Size(169, 24);
+            this.Lab1ToolStripMenuItem.Text = "Лаб1";
             this.Lab1ToolStripMenuItem.Click += new System.EventHandler(this.openForm1ToolStripMenuItem_Click);
             // 
             // шифрПростоїЗаміниToolStripMenuItem
             // 
             this.шифрПростоїЗаміниToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.шифрПростоїЗаміниToolStripMenuItem.Name = "шифрПростоїЗаміниToolStripMenuItem";
-            this.шифрПростоїЗаміниToolStripMenuItem.Size = new System.Drawing.Size(151, 24);
-            this.шифрПростоїЗаміниToolStripMenuItem.Text = "Шифр простої заміни";
+            this.шифрПростоїЗаміниToolStripMenuItem.Size = new System.Drawing.Size(209, 24);
+            this.шифрПростоїЗаміниToolStripMenuItem.Text = "Лаб2";
             this.шифрПростоїЗаміниToolStripMenuItem.Click += new System.EventHandler(this.openForm2ToolStripMenuItem_Click);
             // 
             // частотнийАналізToolStripMenuItem
             // 
             this.частотнийАналізToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.частотнийАналізToolStripMenuItem.Name = "частотнийАналізToolStripMenuItem";
-            this.частотнийАналізToolStripMenuItem.Size = new System.Drawing.Size(151, 24);
-            this.частотнийАналізToolStripMenuItem.Text = "Частотний аналіз";
+            this.частотнийАналізToolStripMenuItem.Size = new System.Drawing.Size(174, 24);
+            this.частотнийАналізToolStripMenuItem.Text = "Лаб3";
             this.частотнийАналізToolStripMenuItem.Click += new System.EventHandler(this.openForm3ToolStripMenuItem_Click);
             // 
             // шифрВіженераToolStripMenuItem
             // 
             this.шифрВіженераToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.шифрВіженераToolStripMenuItem.Name = "шифрВіженераToolStripMenuItem";
-            this.шифрВіженераToolStripMenuItem.Size = new System.Drawing.Size(151, 24);
-            this.шифрВіженераToolStripMenuItem.Text = "Шифр Віженера";
+            this.шифрВіженераToolStripMenuItem.Size = new System.Drawing.Size(165, 24);
+            this.шифрВіженераToolStripMenuItem.Text = "Лаб4";
             this.шифрВіженераToolStripMenuItem.Click += new System.EventHandler(this.openForm4ToolStripMenuItem_Click);
             // 
             // шифрВерманаToolStripMenuItem
             // 
             this.шифрВерманаToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.шифрВерманаToolStripMenuItem.Name = "шифрВерманаToolStripMenuItem";
-            this.шифрВерманаToolStripMenuItem.Size = new System.Drawing.Size(151, 24);
-            this.шифрВерманаToolStripMenuItem.Text = "Шифр Вермана";
+            this.шифрВерманаToolStripMenuItem.Size = new System.Drawing.Size(158, 24);
+            this.шифрВерманаToolStripMenuItem.Text = "Лаб5";
             this.шифрВерманаToolStripMenuItem.Click += new System.EventHandler(this.openForm5ToolStripMenuItem_Click);
-            // 
-            // проСистемуToolStripMenuItem
-            // 
-            this.проСистемуToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.проСистемуToolStripMenuItem.Name = "проСистемуToolStripMenuItem";
-            this.проСистемуToolStripMenuItem.Size = new System.Drawing.Size(105, 24);
-            this.проСистемуToolStripMenuItem.Text = "Про систему";
-            this.проСистемуToolStripMenuItem.Click += new System.EventHandler(this.openForm1ToolStripMenuItem_Click);
             // 
             // евклідБінарнийВибірToolStripMenuItem
             // 
             this.евклідБінарнийВибірToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.евклідБінарнийВибірToolStripMenuItem.Name = "евклідБінарнийВибірToolStripMenuItem";
-            this.евклідБінарнийВибірToolStripMenuItem.Size = new System.Drawing.Size(105, 24);
-            this.евклідБінарнийВибірToolStripMenuItem.Text = "Евклід Бінарний Вибір";
+            this.евклідБінарнийВибірToolStripMenuItem.Size = new System.Drawing.Size(224, 24);
+            this.евклідБінарнийВибірToolStripMenuItem.Text = "Лаб6";
             this.евклідБінарнийВибірToolStripMenuItem.Click += new System.EventHandler(this.openForm6ToolStripMenuItem_Click);
+            // 
+            // Lab7
+            // 
+            this.Lab7.ForeColor = System.Drawing.Color.White;
+            this.Lab7.Name = "Lab7";
+            this.Lab7.Size = new System.Drawing.Size(224, 24);
+            this.Lab7.Text = "Lab7";
+            this.Lab7.Click += new System.EventHandler(this.openForm7ToolStripMenuItem_Click);
+            // 
+            // Lab7
+            // 
+            this.Lab8.ForeColor = System.Drawing.Color.White;
+            this.Lab8.Name = "Lab8";
+            this.Lab8.Size = new System.Drawing.Size(224, 24);
+            this.Lab8.Text = "Lab8";
+            this.Lab8.Click += new System.EventHandler(this.openForm8ToolStripMenuItem_Click);
+            // 
+            // проСистемуToolStripMenuItem
+            // 
+            this.проСистемуToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.проСистемуToolStripMenuItem.Name = "проСистемуToolStripMenuItem";
+            this.проСистемуToolStripMenuItem.Size = new System.Drawing.Size(132, 24);
+            this.проСистемуToolStripMenuItem.Text = "Про систему";
+            this.проСистемуToolStripMenuItem.Click += new System.EventHandler(this.openForm1ToolStripMenuItem_Click);
             // 
             // panelContainer
             // 
@@ -125,21 +147,23 @@ namespace Program2
             this.panelContainer.Name = "panelContainer";
             this.panelContainer.Size = new System.Drawing.Size(1065, 420);
             this.panelContainer.TabIndex = 1;
+           
             // 
-            // Main
+            // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1065, 450);
-            
+            this.ClientSize = new System.Drawing.Size(1420, 554);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Main";
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "MainForm";
             this.Text = "Main";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion
@@ -153,5 +177,8 @@ namespace Program2
         private ToolStripMenuItem шифрВіженераToolStripMenuItem;
         private ToolStripMenuItem шифрВерманаToolStripMenuItem;
         private ToolStripMenuItem евклідБінарнийВибірToolStripMenuItem;
+        private ToolStripMenuItem Lab7;
+        private ToolStripMenuItem Lab8;
+
     }
 }
