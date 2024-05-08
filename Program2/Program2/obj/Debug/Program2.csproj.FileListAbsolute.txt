@@ -32,3 +32,4 @@ D:\ЛНУ\2 курс 2 семестр\Криптологія\Cryptology\Program2
 D:\ЛНУ\2 курс 2 семестр\Криптологія\Cryptology\Program2\Program2\obj\Debug\Program2.MainForm.resources
 D:\ЛНУ\2 курс 2 семестр\Криптологія\Cryptology\Program2\Program2\obj\Debug\Program2.Form7.resources
 D:\ЛНУ\2 курс 2 семестр\Криптологія\Cryptology\Program2\Program2\obj\Debug\Program2.Form8.resources
+D:\ЛНУ\2 курс 2 семестр\Криптологія\Cryptology\Program2\Program2\obj\Debug\Program2.Form9.resources

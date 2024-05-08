@@ -116,5 +116,16 @@ namespace Program2
             panelContainer.Controls.Add(form8);
             form8.Show();
         }
+        private void openForm9ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            Form9 form9 = new Form9();
+            form9.TopLevel = false;
+            form9.FormBorderStyle = FormBorderStyle.None;
+            form9.Dock = DockStyle.Fill;
+            panelContainer.Controls.Clear();
+            panelContainer.Controls.Add(form9);
+            form9.Show();
+        }
     }
 }

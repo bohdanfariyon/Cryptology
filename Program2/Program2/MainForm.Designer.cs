@@ -41,6 +41,7 @@ namespace Program2
             this.panelContainer = new System.Windows.Forms.Panel();
             this.Lab7 = new System.Windows.Forms.ToolStripMenuItem();
             this.Lab8 = new System.Windows.Forms.ToolStripMenuItem();
+            this.Lab9 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,6 +59,7 @@ namespace Program2
             this.евклідБінарнийВибірToolStripMenuItem,
             this.Lab7,
             this.Lab8,
+            this.Lab9,
             this.проСистемуToolStripMenuItem,
             });
 
@@ -124,13 +126,21 @@ namespace Program2
             this.Lab7.Text = "Lab7";
             this.Lab7.Click += new System.EventHandler(this.openForm7ToolStripMenuItem_Click);
             // 
-            // Lab7
+            // Lab8
             // 
             this.Lab8.ForeColor = System.Drawing.Color.White;
             this.Lab8.Name = "Lab8";
             this.Lab8.Size = new System.Drawing.Size(224, 24);
             this.Lab8.Text = "Lab8";
             this.Lab8.Click += new System.EventHandler(this.openForm8ToolStripMenuItem_Click);
+            // 
+            // Lab9
+            // 
+            this.Lab9.ForeColor = System.Drawing.Color.White;
+            this.Lab9.Name = "Lab9";
+            this.Lab9.Size = new System.Drawing.Size(224, 24);
+            this.Lab9.Text = "Lab9";
+            this.Lab9.Click += new System.EventHandler(this.openForm9ToolStripMenuItem_Click);
             // 
             // проСистемуToolStripMenuItem
             // 
@@ -179,6 +189,6 @@ namespace Program2
         private ToolStripMenuItem евклідБінарнийВибірToolStripMenuItem;
         private ToolStripMenuItem Lab7;
         private ToolStripMenuItem Lab8;
-
+        private ToolStripMenuItem Lab9;
     }
 }
